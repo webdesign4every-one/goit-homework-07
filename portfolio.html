@@ -23,7 +23,7 @@
     <!--Header-->
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
+        <div class="header-nav">
           <a href="./index.html" class="logo"
             ><span class="logo-part">Web</span>Studio</a
           >
@@ -35,10 +35,10 @@
               <a href="./portfolio.html" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Contacts</a>
+              <a href="#" class="nav-link">Contacts</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <ul class="list contact-list">
           <li class="contact-item">
             <a href="mailto:info@devstudio.com" class="nav-data"
@@ -51,6 +51,79 @@
             >
           </li>
         </ul>
+        <!--Mobile Menu-->
+        <button type="button" data-menu-open class="burger-button" aria-label="Open menu">
+          <svg class="burger-icon" width="32px" height="22px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" data-menu-close class="mob-close">
+          <svg class="mob-close-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="container mob-container">
+
+            <ul class="list mob-nav-list">
+              <li class="mob-nav-item">
+                <a href="./index.html" class="mob-nav-link">Studio</a>
+              </li>
+              <li class="mob-nav-item current">
+                <a href="./portfolio.html" class="mob-nav-link">Portfolio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="list mob-contact-list">
+              <li class="mob-contact-item">
+                <a href="tel:+11 (000) 111-11-11" class="mob-nav-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contact-item">
+                <a href="mailto:info@devstudio.com" class="mob-nav-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+ 
+              <ul class="list mob-soc-list">
+                <li class="mob-soc-item">
+                  <a class="link mob-soc-link" href="#">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="#" class="link mob-soc-link"
+                    ><svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="#" class="link mob-soc-link"
+                    ><svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="#" class="link mob-soc-link"
+                    ><svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!--Main Section-->
@@ -77,16 +150,16 @@
           </ul>
         </div>
       </section>
+      <!--Main Section Part 2-->
       <section class="portfolio-section">
         <div class="container portfolio-container">
           <ul class="list portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
+                <img class="portfolio-cover-img"
                   src="./images/bank.jpg"
                   alt="Computer with banking app design"
-                  width="360px"
-                  height="300px"
+                  
                 />
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -101,11 +174,10 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/applepay.jpg"
                 alt="NFC Payment"
-                width="360px"
-                height="300px"
+               
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -114,17 +186,16 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Cashless Payment</h3>
+                <h3>Cashless Payment</h3>
                 <p>Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/meditation.jpg"
                 alt="Meditation App Design on mobile and web"
-                width="360px"
-                height="300px"
+                
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -133,18 +204,17 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Meditation App</h3>
+                <h3>Meditation App</h3>
                 <p>App</p>
               </div>
             </li>
 
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/taxi.jpg"
                 alt="Driving car"
-                width="360px"
-                height="300px"
+              
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -153,17 +223,16 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Taxi Service</h3>
+                <h3>Taxi Service</h3>
                 <p>Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/bg.jpg"
                 alt="Background for mobile"
-                width="360px"
-                height="300px"
+                
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -172,17 +241,16 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Screen Illustrations</h3>
+                <h3>Screen Illustrations</h3>
                 <p>Design</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/course.jpg"
                 alt="Girl listening and watching course on her smartphone"
-                width="360px"
-                height="300px"
+               
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -191,17 +259,16 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Online Courses</h3>
+                <h3>Online Courses</h3>
                 <p>Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/insta.jpg"
                 alt="Instagram stories designs"
-                width="360px"
-                height="300px"
+              
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -210,17 +277,15 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Instagram Stories Concept</h3>
+                <h3>Instagram Stories Concept</h3>
                 <p>Design</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/vegan.jpg"
                 alt="Woman with vegetables"
-                width="360px"
-                height="300px"
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -229,18 +294,16 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Organic Food</h3>
+                <h3>Organic Food</h3>
                 <p>Web site</p>
               </div>
             </li>
 
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
-              <img
+              <img class="portfolio-cover-img"
                 src="./images/coffee.jpg"
                 alt="Pouring coffee"
-                width="360px"
-                height="300px"
               />
               <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -249,7 +312,7 @@
                 </p>
                 </div>
               <div class="item-content">
-                <h3 class="item-header">Fresh Coffee</h3>
+                <h3>Fresh Coffee</h3>
                 <p>Web site</p>
               </div>
             </li>
@@ -265,12 +328,11 @@
               ><span class="logo-part">Web</span>Studio</a
             >
             <p class="footer-text">
-              Increase the flow of customers and <br />
-              sales for your business with digital<br />
-              marketing & growth solutions.
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
             </p>
           </div>
-          <div>
+          <div class="social-content">
             <b>Social media</b>
             <ul class="list team-soc-list">
               <li class="team-soc-item">
@@ -281,22 +343,22 @@
                 </a>
               </li>
               <li class="team-soc-item">
-                <a class="link team-soc-link" href="#">
-                  <svg class="team-soc-icon" width="24" height="24">
+                <a href="#" class="link team-soc-link"
+                  ><svg class="team-soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="team-soc-item">
-                <a class="link team-soc-link" href="#">
-                  <svg class="team-soc-icon" width="24" height="24">
+                <a href="#" class="link team-soc-link"
+                  ><svg class="team-soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="team-soc-item">
-                <a class="link team-soc-link" href="#">
-                  <svg class="team-soc-icon" width="24" height="24">
+                <a href="#" class="link team-soc-link"
+                  ><svg class="team-soc-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -304,18 +366,25 @@
             </ul>
           </div>
           <div class="subscribe-container">
-          <b>Subscribe</b>
-          <div class="subscribe-wrap"><input 
-          class="email-input" 
-          type="text"
-          name="subscribe" 
-          id="subscribe"
-          placeholder="E-mail"/>
-          <button type="submit" class="subscribe-button button">Subscribe<svg class="subscribe-icon" width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button>
-        </div>
-        </div>
+            <b>Subscribe</b>
+            <div class="subscribe-wrap">
+              <input
+                class="email-input"
+                type="text"
+                name="subscribe"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="subscribe-button button">
+                Subscribe<svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
