@@ -133,19 +133,21 @@
           <h2 class="visually-hidden">Projects Catalogue</h2>
           <ul class="list filter-list">
             <li class="filter-item">
-              <button type="button" class="filter-button">All</button>
+              <button type="button" class="filter-button" data-filter="all"
+              >All</button>
             </li>
             <li class="filter-item">
-              <button type="button" class="filter-button">Web site</button>
+              <button type="button" class="filter-button" data-filter="web-site"
+              >Web site</button>
             </li>
             <li class="filter-item">
-              <button type="button" class="filter-button">App</button>
+              <button type="button" class="filter-button" data-filter="app" >App</button>
             </li>
             <li class="filter-item">
-              <button type="button" class="filter-button">Design</button>
+              <button type="button" class="filter-button" data-filter="design" >Design</button>
             </li>
             <li class="filter-item">
-              <button type="button" class="filter-button">Marketing</button>
+              <button type="button" class="filter-button" data-filter="marketing" >Marketing</button>
             </li>
           </ul>
         </div>
@@ -154,7 +156,7 @@
       <section class="portfolio-section">
         <div class="container portfolio-container">
           <ul class="list portfolio-list">
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="app">
               <div class="portfolio-cover-wrap">
                 <img class="portfolio-cover-img"
                   src="./images/bank.jpg"
@@ -172,7 +174,7 @@
                 <p>App</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="marketing">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/applepay.jpg"
@@ -190,7 +192,7 @@
                 <p>Marketing</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="app">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/meditation.jpg"
@@ -209,7 +211,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="marketing">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/taxi.jpg"
@@ -227,7 +229,7 @@
                 <p>Marketing</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="design">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/bg.jpg"
@@ -245,7 +247,7 @@
                 <p>Design</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="marketing">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/course.jpg"
@@ -263,7 +265,7 @@
                 <p>Marketing</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="design">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/insta.jpg"
@@ -281,7 +283,7 @@
                 <p>Design</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="web-site">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/vegan.jpg"
@@ -299,7 +301,7 @@
               </div>
             </li>
 
-            <li class="portfolio-item">
+            <li class="portfolio-item" data-card="web-site">
               <div class="portfolio-cover-wrap">
               <img class="portfolio-cover-img"
                 src="./images/coffee.jpg"
@@ -386,5 +388,6 @@
       </section>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/portfolio.js"></script>
   </body>
 </html>
